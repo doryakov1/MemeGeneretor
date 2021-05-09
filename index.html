@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MemeGenerator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+
+    <header>
+        <section class="container header-wrapper flex align-center justify-center">
+            <nav class="main-nav">
+                <ul class="main-menu clean-list flex align-center ">
+                    <li>
+                        <a href="#">Memes</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="second-panel flex justify-center container">
+            <nav class="control-nav flex justify-center ">
+                <ul class="control-nav-list  clean-list flex justify-center ">
+                    <li><input class="fill-style" value="#FFFFFF" onchange="onTextColor('fillStyle', this.value)" type="color"></input>
+                    </li>
+                    <li><input class="stroke-style" value="#000000" onchange="onTextColor('strokeStyle' ,this.value)" type="color"></input>
+                    </li>
+                    <li class="font-size-options">
+                        <i class="fas fa-minus" onclick="onTextFontSize(-10)"></i><span class="font-size"></span><i class="fas fa-plus" onclick="onTextFontSize(10)"></i>
+                    </li>
+                    <li class="text-align-options">
+                        <i class="fas fa-align-left" onclick="OnTextAlign('textAlign' ,'right')"></i>
+                        <i class="fas fa-align-center" onclick="OnTextAlign('textAlign' ,'center')"></i>
+                        <i class="fas fa-align-right" onclick="OnTextAlign('textAlign' ,'left')"></i>
+                    </li>
+                </ul>
+                <select class="lines-options" onchange="onLinesSwitch('line' ,this.value)">
+                              <option value=0>Line 1</option>
+                              <option value=1 selected>Line 2</option>
+                              <option value=2>Line 3</option>
+                            </select>
+                <input class="meme-text" placeholder="SomeText" oninput="onTextContent(this.value)" />
+            </nav>
+        </section>
+        <section class="container  main-wrapper ">
+            <div class="meme-images">
+            </div>
+            <canvas class="my-canvas">  
+                </section>
+                <section class="editor-panal">
+                        <i class="fas fa-images editor-modal" onclick="ToggleEditorModal('hide')">Back To Gallery</i>
+                            <span class="fas fa-upload"> <input   type="file" name="image" onchange="onFileInputChange(event)" /></span>
+                            <a href="#" onclick="onDownloadCanvas(this)" download=""><i class="fas fa-download"> Download Image</i></a>                 
+                </section>
+    </main>
+    <footer>
+        <section class="container">
+            <small>© 2019  - All Rights Reserved - DorYakov</small>
+        </section>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/util.js"></script>
+</body>
+
+</html>

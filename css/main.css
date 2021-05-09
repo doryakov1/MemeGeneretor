@@ -1,0 +1,291 @@
+                                                                                                /*----------  Lato  ----------*/
+                                                                                                
+                                                                                                @font-face {
+                                                                                                    font-family: 'latoregular';
+                                                                                                    src: url("../fonts/lato/Lato-Regular.ttf") format("truetype");
+                                                                                                    font-weight: normal;
+                                                                                                    font-style: normal;
+                                                                                                }
+                                                                                                
+                                                                                                @font-face {
+                                                                                                    font-family: 'latobold';
+                                                                                                    src: url("../fonts/lato/Lato-Bold.ttf") format("truetype");
+                                                                                                    font-weight: normal;
+                                                                                                    font-style: normal;
+                                                                                                }
+                                                                                                /*----------  Eurof  ----------*/
+                                                                                                
+                                                                                                @font-face {
+                                                                                                    font-family: 'eurofbold';
+                                                                                                    src: url("../fonts/euro/eurof55.ttf") format("truetype");
+                                                                                                    font-weight: normal;
+                                                                                                    font-style: normal;
+                                                                                                }
+                                                                                                /*----------  Font Awesome  ----------*/
+                                                                                                
+                                                                                                @font-face {
+                                                                                                    font-family: 'fontawesome';
+                                                                                                    src: url("../fonts/fontawesome/FontAwesome.otf");
+                                                                                                    src: url("../fonts/fontawesome/fontawesome-webfont.eot") format("embedded-opentype"), url("../fonts/fontawesome/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome/fontawesome-webfont.svg") format("svg");
+                                                                                                    font-weight: normal;
+                                                                                                    font-style: normal;
+                                                                                                }
+                                                                                                
+                                                                                                .fa {
+                                                                                                    display: inline-block;
+                                                                                                    font-family: fontawesome;
+                                                                                                    font-size: inherit;
+                                                                                                    text-rendering: auto;
+                                                                                                    -webkit-font-smoothing: antialiased;
+                                                                                                    -moz-osx-font-smoothing: grayscale;
+                                                                                                }
+                                                                                                /*----------  Basic  ----------*/
+                                                                                                
+                                                                                                * {
+                                                                                                    box-sizing: border-box;
+                                                                                                }
+                                                                                                
+                                                                                                html {
+                                                                                                    font-family: latoregular, sans-serif;
+                                                                                                }
+                                                                                                
+                                                                                                body {
+                                                                                                    margin: 0;
+                                                                                                }
+                                                                                                /*----------  Clean List  ----------*/
+                                                                                                
+                                                                                                .clean-list {
+                                                                                                    list-style-type: none;
+                                                                                                    margin: 0;
+                                                                                                    padding: 0;
+                                                                                                }
+                                                                                                /*---------- Button  ----------*/
+                                                                                                
+                                                                                                button {
+                                                                                                    cursor: pointer;
+                                                                                                }
+                                                                                                /*---------- Flex  ----------*/
+                                                                                                
+                                                                                                .flex {
+                                                                                                    display: flex;
+                                                                                                }
+                                                                                                
+                                                                                                .flex-1 {
+                                                                                                    flex: 1;
+                                                                                                }
+                                                                                                
+                                                                                                .justify-center {
+                                                                                                    justify-content: center;
+                                                                                                }
+                                                                                                
+                                                                                                .align-center {
+                                                                                                    align-items: center;
+                                                                                                }
+                                                                                                
+                                                                                                .space-between {
+                                                                                                    justify-content: space-between;
+                                                                                                }
+                                                                                                
+                                                                                                .space-around {
+                                                                                                    justify-content: space-around;
+                                                                                                }
+                                                                                                /*---------- Layout  ----------*/
+                                                                                                
+                                                                                                .container {
+                                                                                                    max-width: 1020px;
+                                                                                                    margin: auto;
+                                                                                                }
+                                                                                                /*---------- Grid  ----------*/
+                                                                                                
+                                                                                                .grid {
+                                                                                                    display: grid;
+                                                                                                }
+                                                                                                /*---------- Meme  ----------*/
+                                                                                                
+                                                                                                .meme-images {
+                                                                                                    display: flex;
+                                                                                                    justify-content: center;
+                                                                                                    flex-wrap: wrap;
+                                                                                                    margin: 0;
+                                                                                                    padding: 0;
+                                                                                                    background: white;
+                                                                                                }
+                                                                                                
+                                                                                                .meme-images div {
+                                                                                                    padding: 5px;
+                                                                                                    margin: 1px;
+                                                                                                }
+                                                                                                
+                                                                                                .meme-images img {
+                                                                                                    width: 175px;
+                                                                                                    height: 175px;
+                                                                                                    transition: all 0.5s;
+                                                                                                }
+                                                                                                
+                                                                                                .meme-images img:hover,
+                                                                                                .meme-images img:focus {
+                                                                                                    padding: 15px;
+                                                                                                    transform: scale(1.4);
+                                                                                                }
+                                                                                                
+                                                                                                .meme-images img:active {
+                                                                                                    padding: 15px;
+                                                                                                    transform: scale(1.4);
+                                                                                                }
+                                                                                                
+                                                                                                .meme-text {
+                                                                                                    text-align: center;
+                                                                                                }
+                                                                                                /*----------text-align-options childs----------*/
+                                                                                                
+                                                                                                .text-align-options i {
+                                                                                                    background: white;
+                                                                                                    cursor: pointer;
+                                                                                                    margin: 3px;
+                                                                                                    padding: 3px;
+                                                                                                }
+                                                                                                
+                                                                                                .text-align-options i:hover {
+                                                                                                    background: #1e1e1e;
+                                                                                                    color: white;
+                                                                                                }
+                                                                                                /*---------- Canvas  ----------*/
+                                                                                                
+                                                                                                canvas {
+                                                                                                    width: 100%;
+                                                                                                }
+                                                                                                
+                                                                                                .my-canvas {
+                                                                                                    display: none;
+                                                                                                }
+                                                                                                /*---------- Header And Main Menu  ----------*/
+                                                                                                
+                                                                                                header .header-wrapper {
+                                                                                                    height: 40px;
+                                                                                                    background-color: #323232;
+                                                                                                    color: #fff;
+                                                                                                    font-family: latobold, sans-serif;
+                                                                                                }
+                                                                                                
+                                                                                                .main-menu a {
+                                                                                                    text-decoration: none;
+                                                                                                    color: #fff;
+                                                                                                    font-weight: normal;
+                                                                                                    margin-left: 2rem;
+                                                                                                    line-height: 3rem;
+                                                                                                    font-size: 1.5rem;
+                                                                                                }
+                                                                                                
+                                                                                                .main-menu a:hover {
+                                                                                                    color: steelblue;
+                                                                                                    font-size: 30px;
+                                                                                                    transition-duration: 0.3s;
+                                                                                                }
+                                                                                                /*---------- Main Warpper And Panels  ----------*/
+                                                                                                
+                                                                                                .second-panel {
+                                                                                                    display: none;
+                                                                                                    background: white;
+                                                                                                    text-align: center;
+                                                                                                    margin: auto;
+                                                                                                }
+                                                                                                
+                                                                                                .second-panel * {
+                                                                                                    margin: 5px;
+                                                                                                }
+                                                                                                /*---------- Breakpoint mixins  ----------*/
+                                                                                                
+                                                                                                @media (max-width: 1020px) {
+                                                                                                    .container {
+                                                                                                        max-width: 740px;
+                                                                                                    }
+                                                                                                }
+                                                                                                
+                                                                                                @media (max-width: 740px) {
+                                                                                                    .container {
+                                                                                                        max-width: 100%;
+                                                                                                    }
+                                                                                                    canvas {
+                                                                                                        height: 400px;
+                                                                                                    }
+                                                                                                    .meme-images img {
+                                                                                                        width: 125px;
+                                                                                                        height: 125px;
+                                                                                                    }
+                                                                                                    .editor-modal {
+                                                                                                        font-size: 25px;
+                                                                                                        margin-top: 5px;
+                                                                                                        margin-bottom: 5px;
+                                                                                                    }
+                                                                                                    .second-panel * {
+                                                                                                        padding: 0;
+                                                                                                        margin: -1px;
+                                                                                                        width: auto;
+                                                                                                    }
+                                                                                                    .second-panel .meme-text,
+                                                                                                    .second-panel .lines-options .second-panel .text-align-options {
+                                                                                                        font-size: 10px;
+                                                                                                        margin: 0;
+                                                                                                        padding: 0;
+                                                                                                    }
+                                                                                                }
+                                                                                                /*---------- control-nav-list ----------*/
+                                                                                                
+                                                                                                .font-size-options * {
+                                                                                                    margin-right: 3px;
+                                                                                                    font-size: 15px;
+                                                                                                    cursor: pointer;
+                                                                                                }
+                                                                                                
+                                                                                                .font-size-options {
+                                                                                                    margin-right: 5px;
+                                                                                                }
+                                                                                                
+                                                                                                .main-wrapper {
+                                                                                                    border-right: 1px solid #e1e0e0;
+                                                                                                    border-left: 1px solid #e1e0e0;
+                                                                                                    padding: 20px;
+                                                                                                }
+                                                                                                
+                                                                                                .main-wrapper .second-panel {
+                                                                                                    width: 620px;
+                                                                                                }
+                                                                                                
+                                                                                                .main-wrapper .first-panel {
+                                                                                                    width: 300px;
+                                                                                                    padding-right: 20px;
+                                                                                                }
+                                                                                                
+                                                                                                .main-wrapper {
+                                                                                                    background: white;
+                                                                                                }
+                                                                                                /*---------- editor-modal  ----------*/
+                                                                                                
+                                                                                                .editor-panal {
+                                                                                                    text-align: center;
+                                                                                                    display: none;
+                                                                                                    margin: 5px;
+                                                                                                }
+                                                                                                
+                                                                                                .editor-modal {
+                                                                                                    color: cadetblue;
+                                                                                                    font-size: 30px;
+                                                                                                    margin-top: 5px;
+                                                                                                    margin-bottom: 5px;
+                                                                                                    font-weight: normal;
+                                                                                                    cursor: pointer;
+                                                                                                }
+                                                                                                
+                                                                                                .editor-modal:hover {
+                                                                                                    color: steelblue;
+                                                                                                    font-weight: bold;
+                                                                                                    transition-duration: 0.5s;
+                                                                                                }
+                                                                                                /*---------- Footer  ----------*/
+                                                                                                
+                                                                                                footer {
+                                                                                                    background: #f8f8f8;
+                                                                                                    text-align: center;
+                                                                                                    border-top: 0.60px solid #e1e0e0;
+                                                                                                    color: #a6a6a6;
+                                                                                                }
